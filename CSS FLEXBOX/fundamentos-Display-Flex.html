@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>fundamentos-Display-Flex</title>
+	<style>
+		.flex{
+			max-width: 450px;
+			padding: 10px;
+			border: 2px solid black;
+		}
+
+		.item{
+			background-color: aqua;
+			margin: 5px;
+		}
+
+		.img{
+			
+			max-width: 400px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>CSS FLEXBOX PRESENTATION</h1>
+	</header>
+	<article class="flex">
+		<h2>suporte</h2>
+		<p>
+			Foi projetado como um modelo de layout unidimensional e como um método que pode oferecer distribuição de espaço entre itens em uma interface e recursos de alinhamento.
+		</p>
+		<div class="flex">
+			<h2>Flex Container</h2>
+			<p class="item">
+				É a tag que envolve os itens, será nela que iremos aplicar a propriedade "display: flex". Transforma todos os seus itens filhos em flex itens.
+			</p>
+			<img class="img" src="../assets/img/flexboxexemplo.png" alt="exemplo flexbox">
+			<div class="item">
+				<h3>Flext Item</h3>
+				<p>
+					São os elementos filhos diretos do Flex Container. E também podem se tornar Flex Containers!
+				</p>
+			</div>
+			<h2>Propriedades!</h2>
+			<div class="item">
+				<h3>Display: flex</h3>
+				<p>Torna a tag um elemento do tipo flex container, assim automaticamente todos os seus filhos diretos desta tag,tornam-se em flex items.</p>
+			</div>
+			<div class="item">
+				<h3>Flex-direction</h3>
+				<p>É a propriedade que estabelece o eixo principal do container, definindo assim a direção que os flex items são colocados no flex-container.</p>
+				<h2>os eixos...</h2>
+				<ul>
+					<li>row(padrão): à direção do texto, esquerda para direita</li>
+					<img class="img"src="../assets/img/rowpadrao.png" alt="padrao">
+					<li>row-reverse: sentido oposto à direção do texto</li>
+					<img class="img"src="../assets/img/rowreverse.png" alt="row-reverse">
+					<li>column: ordenação de cima para baixo, em coluna unica</li>
+					<img class="img" src="../assets/img/column.png" alt="column">
+					<li>column-reverse: ordenação inversa, de baixo para cima</li>
+					<img class="img" src="../assets/img/columnreverse.png" alt="column">
+
+				</ul>
+			</div>
+		</div>
+	</article>
+	<iframe src="/footer.html" frameborder="0"></iframe>
+</body>
+</html>
