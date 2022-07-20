@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>align-content</title>
+	<style>
+		.container {
+			height: 400px;
+			max-width: 300px;
+			margin: 0 auto;
+			display: flex;
+			flex-wrap: wrap;
+			border: 1px solid black;
+		}
+
+		.item{
+			background-color: darkorange;
+			padding: 0 5px;
+			margin: 5px;
+			flex: 1;
+			text-align: center;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<h1>align-content</h1>
+		<div>
+			<p>precisamos que:</p>
+			<ul>
+				<li>o container utilize a quebra de linhas</li>
+				<li>a altura do container seja maior que a soma das linhas dos itens</li>
+			</ul>
+			<p>para que essa propriedade funcione</p>
+		</div>
+		<div>
+			<p>os tipos de alinhamento:</p>
+			<ul>
+				<li>center</li>
+				<li>strech</li>
+				<li>flex-start</li>
+				<li>flex-end</li>
+				<li>space-between</li>
+				<li>space-around</li>
+			</ul>
+		</div>
+	</div>	
+	
+	<p>agora exemplificando: <br>
+	</p>
+
+	<div class="container">
+		<div class="item">Lorem ipsum dolor sit amet condis!</div>
+		<div class="item">Los!</div>
+		<div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elellendus.</div>
+		<div class="item">Lorem ipsum dus quam error aut!</div>
+		<div class="item">Lorem, ipsum dolor sit amet i.</div>
+		<div class="item">Lorem ipsum dolor sit amet consectea, cooluptate cupiditate.</div>
+		<div class="item">Lorem ipsum dolor sit amet consect Enim </div>
+	</div>
+
+</body>
+</html>
